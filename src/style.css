@@ -33,7 +33,7 @@ nav {
 }
 
 .header-title {
-  font-size: xx-large;
+  font-size: x-large;
 }
 
 ul {
@@ -44,6 +44,8 @@ ul {
 }
 
 .home, .portfolio, .about, .contact-me {
+  padding: 80px;
+  gap: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,11 +61,53 @@ ul {
 .portfolio, .contact-me {
   background-color: var(--color-claro);
 }
-.home {
-  padding: 100px;
-  gap: 20px;
-}
+
 .home-title {
   font-size: 10vh;
+  font-weight: 1000;
+}
+
+.section-title {
+  font-size: xx-large;
+  font-weight: 1000;
+}
+
+.proyects-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  gap: 10px;
+}
+
+.proyect-img {
+  margin: 10px;
+  width: 300px;
+}
+
+.about-text {
+  columns: 2;
+  width: 60%;
+  text-align: justify;
+  column-gap: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  color: #4e4058;
+}
+
+.contact-input, .contact-textarea {
+  margin-bottom: 10px;
+  border: none;
+  box-shadow: 0px 2px 5px rgba(115, 114, 114, 0.1); /* Agregar sombra */
+  border-radius: 5px; 
+  padding: 10px;
+  font-size: 20px
+}
+
+.contact-input {
+  height: 30px;
 }
 
