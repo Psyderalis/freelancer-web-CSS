@@ -1,0 +1,41 @@
+:root {
+  --color-oscuro: #443152;
+  --color-medio: #6edde0;
+  --color-claro: #f8eeee;
+  --fuente-Lato: 'Lato', sans-serif;
+  --fuente-Montserrat: 'Montserrat', sans-serif;
+}
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--fuente-Lato);
+}
+
+header {
+  display: flex;
+  min-height: 10vw;
+  align-items: center;
+  background-color: var(--color-oscuro);
+  color: var(--color-claro);
+  font-family: var(--fuente-Montserrat);
+}
+
+.header-title,
+nav {
+  text-align: center;
+  width: 50%;
+  font-weight: 1000;
+}
+
+.header-title{
+  font-size: xx-large;
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
