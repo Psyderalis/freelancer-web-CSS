@@ -1,6 +1,6 @@
 :root {
-  --color-oscuro: #443152;
-  --color-medio: #6ee0c3;
+  --color-oscuro: #4e4058;
+  --color-medio: #43c9a7;
   --color-claro: #f8eeee;
   --fuente-Lato: 'Lato', sans-serif;
   --fuente-Montserrat: 'Montserrat', sans-serif;
@@ -32,7 +32,7 @@ nav {
   font-weight: 1000;
 }
 
-.header-title{
+.header-title {
   font-size: xx-large;
 }
 
@@ -45,14 +45,25 @@ ul {
 
 .home, .portfolio, .about, .contact-me {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   min-height: 60vh;
 }
 
 .home, .about {
   background-color: var(--color-medio);
-
+  color: var(--color-claro);
 }
 
 .portfolio, .contact-me {
   background-color: var(--color-claro);
 }
+.home {
+  padding: 100px;
+  gap: 20px;
+}
+.home-title {
+  font-size: 10vh;
+}
+
