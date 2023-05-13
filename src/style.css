@@ -1,6 +1,6 @@
 :root {
   --color-oscuro: #443152;
-  --color-medio: #6edde0;
+  --color-medio: #6ee0c3;
   --color-claro: #f8eeee;
   --fuente-Lato: 'Lato', sans-serif;
   --fuente-Montserrat: 'Montserrat', sans-serif;
@@ -15,9 +15,10 @@ body {
   font-family: var(--fuente-Lato);
 }
 
-header {
+header, footer {
   display: flex;
-  min-height: 10vw;
+  min-height: 100px;
+  justify-content: space-between;
   align-items: center;
   background-color: var(--color-oscuro);
   color: var(--color-claro);
@@ -27,15 +28,31 @@ header {
 .header-title,
 nav {
   text-align: center;
-  width: 50%;
+  width: 45%;
   font-weight: 1000;
 }
 
 .header-title{
   font-size: xx-large;
 }
+
 ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   list-style-type: none;
+  gap: 5%;
+}
+
+.home, .portfolio, .about, .contact-me {
+  display: flex;
+  min-height: 60vh;
+}
+
+.home, .about {
+  background-color: var(--color-medio);
+
+}
+
+.portfolio, .contact-me {
+  background-color: var(--color-claro);
 }
