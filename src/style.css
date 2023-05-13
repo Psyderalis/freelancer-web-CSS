@@ -13,6 +13,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: var(--fuente-Lato);
+  scroll-behavior: smooth;
 }
 
 header, footer {
@@ -23,6 +24,12 @@ header, footer {
   background-color: var(--color-oscuro);
   color: var(--color-claro);
   font-family: var(--fuente-Montserrat);
+}
+
+header {
+  position: fixed;
+  width: 100vw;
+  top: 0;
 }
 
 .header-title,
@@ -49,7 +56,7 @@ a {
 }
 
 .home, .portfolio, .about, .contact-me {
-  padding: 80px;
+  padding: 180px 80px 80px;
   gap: 20px;
   display: flex;
   flex-direction: column;
