@@ -26,7 +26,7 @@ header, footer {
 }
 
 .header-title,
-nav {
+nav, .footer-info {
   text-align: center;
   width: 45%;
   font-weight: 1000;
@@ -43,6 +43,11 @@ ul {
   gap: 5%;
 }
 
+a {
+  text-decoration: none;
+  color: var(--color-claro);
+}
+
 .home, .portfolio, .about, .contact-me {
   padding: 80px;
   gap: 20px;
@@ -50,7 +55,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 60vh;
+  min-height: 80vh;
 }
 
 .home, .about {
